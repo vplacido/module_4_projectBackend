@@ -8,4 +8,9 @@ class CommentsController < ApplicationController
 		comment = Comment.find(params[:id])
 		render json: comment
 	end
+
+	def destroy
+		comment = Comment.find(params[:id])
+		comment.delete
+	end
 end

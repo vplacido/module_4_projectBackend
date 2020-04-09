@@ -10,7 +10,7 @@ User.destroy_all
 Post.destroy_all
 Comment.destroy_all
 
-user1 = User.create(username: "Jason", password:"JasonP", profile_img: "https://picsum.photos/200/300", description: "I'm confused")
+user1 = User.create(username: "Jason", password:"JasonP", profile_img: "https://picsum.photos/150/150", description: "I'm confused")
 user2 = User.create(username: "Valentin", password:"ValentinP", profile_img: "https://picsum.photos/1/1",  description: "I'm confused as well")
 user3 = User.create(username: "Joseph", password:"Joseph", profile_img: "https://picsum.photos/200/300",  description: "I'm leaving")
 
