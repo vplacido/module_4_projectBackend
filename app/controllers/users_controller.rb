@@ -4,6 +4,13 @@ class UsersController < ApplicationController
 		render json: user
 	end
 
+	def new
+		user = User.new
+	end
+
+	def create
+		user = User.create(username: params[:username], password: params[:password], description: params[:description], profile_img: nil)
+	end
 	def show
 		user = User.find(params[:id])
 		render json: user

@@ -4,6 +4,11 @@ class CommentsController < ApplicationController
 		render json: comment
 	end
 
+	def create
+		
+		comment = Comment.create(user_id: 24, post_id: 27, content:params[:content])
+	end
+
 	def show
 		comment = Comment.find(params[:id])
 		render json: comment
