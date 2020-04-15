@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 
 	def create
 		
-		comment = Comment.create(user_id: 24, post_id: params[:post_id], content:params[:content])
+		comment = Comment.create(user_id: params[:user_id], post_id: params[:post_id], content:params[:content])
 	end
 
 	def show
